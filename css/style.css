@@ -1,0 +1,299 @@
+.setting {
+    position: fixed;
+    background-color: rgba(0, 0, 0, .8);
+    padding: 10px;
+    color: white;
+    left: 0;
+    top: 20%;
+    font-size: 20px;
+    z-index: 3;
+}
+
+nav {
+    position: absolute;
+    z-index: 2;
+}
+
+.home .navbar-nav {
+    padding: 10px 20px;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+
+/* .nav-link span {
+    color: #f25454;
+} */
+
+.navbar .nav-item:hover .nav-link {
+    color: #e65f78 !important;
+}
+
+.navbar .icon .fab:hover {
+    color: #f25454;
+}
+
+.home .carousel-inner {
+    height: 100vh;
+}
+
+.home .carousel-inner img {
+    height: 100%;
+}
+
+.home .icon .fab {
+    color: #fff;
+    padding: 0px 10px;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 30%;
+    width: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.carousel-caption h2 {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.home .scroll {
+    position: absolute;
+    width: 30px;
+    height: 45px;
+    border: 2px solid white;
+    left: 50%;
+    bottom: 5%;
+    padding: 10px 13px;
+}
+
+.home .scroll::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    bottom: 40%;
+    left: 35%;
+    border-radius: 50%;
+    animation: scroll 2s infinite;
+}
+
+@keyframes scroll {
+    0% {
+        bottom: 10px;
+    }
+    20% {
+        bottom: 20px;
+    }
+    40% {
+        bottom: 10px;
+    }
+    60% {
+        bottom: 20px;
+    }
+    80% {
+        bottom: 10px;
+    }
+    100% {
+        bottom: 20px;
+    }
+}
+
+.carousel-inner .carousel-control-prev {
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    font-size: 18px;
+    left: 0;
+    top: 50%;
+    position: relative;
+    z-index: 2;
+    padding: 3px 10px 0 10px;
+}
+
+.carousel-inner .carousel-control-next {
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    font-size: 18px;
+    left: 0;
+    top: 45%;
+    position: relative;
+    z-index: 2;
+    padding: 3px 10px 0 10px;
+}
+
+
+/*============================= */
+
+.about .progress .progress-bar {
+    background-color: #f25454;
+}
+
+.about .progress {
+    height: 4px;
+    margin-top: 10px;
+}
+
+.text {
+    position: relative;
+}
+
+.text h1,
+.text h2 {
+    position: absolute;
+}
+
+.text h1 {
+    font-size: 90px;
+    color: #f1f1f1;
+}
+
+.text .line {
+    width: 5%;
+    background-color: black;
+    height: 3px;
+    margin-top: 120px;
+    transition: all 1s;
+}
+
+.col-md-12:hover .line {
+    width: 10%;
+}
+
+.text .p {
+    margin-top: 140px;
+}
+
+
+/* =============================== */
+
+.team {
+    position: relative;
+    overflow: hidden;
+}
+
+.team .caption {
+    position: absolute;
+    background-color: rgba(242, 84, 84, 0.85);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.col-md-3:hover .caption {
+    opacity: 1;
+}
+
+.caption .fab {
+    padding: 0px 20px;
+    color: white;
+}
+
+.img-work {
+    transition: all 1s;
+    width: 100%;
+}
+
+.col-md-3:hover .img-work {
+    transform: scale(1.2);
+}
+
+.col-md-3:hover .as h3 {
+    color: red;
+}
+
+
+/* ============================ */
+
+.service {
+    margin-bottom: 70px;
+    background-color: #f8f9fa !important;
+}
+
+.service .media:hover h5 {
+    color: red;
+}
+
+
+/* ================== */
+
+.toch {
+    background-color: #f8f9fa !important;
+    margin-bottom: 70px;
+}
+
+.toch .line1 {
+    background-color: gray;
+    color: gray;
+    height: 2px;
+    width: 100%;
+}
+
+.toch .media:hover h5 {
+    color: red;
+}
+
+.cont .btn {
+    background-color: #f25454 !important;
+    border-color: #ccc !important;
+    font-weight: 700;
+}
+
+
+/* =========================== */
+
+.ahmed {
+    margin-bottom: 70px;
+}
+
+.but .btn {
+    background-color: #f25454 !important;
+    border-color: #ccc !important;
+    font-weight: 700;
+}
+
+
+/* ================================= */
+
+.contact {
+    background-color: #222;
+}
+
+.contact h3 {
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.contact p {
+    color: #b0b0b0;
+}
+
+.contact .btn {
+    color: #b0b0b0;
+    border: 1px solid #b0b0b0;
+    margin-bottom: 5px;
+    background-color: transparent;
+}
+
+.contact p:hover {
+    color: #f25454;
+}
+
+.contact .btn:hover {
+    color: #f25454;
+    border-color: #f25454;
+}
